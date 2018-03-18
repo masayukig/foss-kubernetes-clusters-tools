@@ -83,5 +83,6 @@ Pros/Cons
 Demo(OpenStack Magnum, Mesos DC/OS, Rancher...)
 ===============================================
 
+* http://rancher.com/docs/rancher/latest/en/quick-start-guide/
 
 
