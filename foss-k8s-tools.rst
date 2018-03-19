@@ -1,13 +1,13 @@
 FOSSAsia Summit 2018
 ====================
 
-.. figlet:: Comparison of FOSS k8s clusters management/deployment tools
+.. figlet:: Comparison of FOSS k8s management tools
 
 .. code:: yaml
 
-     Name     : Masayuki Igawa
-     Slide URL: https://github.com/masayukig/terminal-software-again
-     Date     : Sunday, March 25 2018
+   Name     : Masayuki Igawa
+   Slide URL: https://github.com/masayukig/foss-kubernetes-clusters-tools
+   Date     : Sunday, March 25 2018
 
 .. Kubernetes(k8s) is the most popular and famous container orchestration
    software these days. And we can use it through Kubernetes as a
@@ -32,7 +32,8 @@ Who am I?
 
 .. container:: progressive
 
-   * OpenStack Programmer
+   * OpenStack Up/Down stream Programmer
+     * Quarity Assurance (Tempest, stestr..)
    * SUSE
    * Linux User
    * Mesos User Group Tokyo
@@ -48,14 +49,14 @@ What is Kubernetes?
    * Difficult to deploy
 
 
-Why should we use FOSS tools?
-=============================
+Why should we use FOSS tools? (why not GKE, etc?)
+=================================================
 
 .. container:: progressive
 
    * Free
    * Source code
-   * Fun
+   * To know everything -> Fun :)
 
 FOSS k8s tools
 ==============
@@ -65,6 +66,60 @@ FOSS k8s tools
    * OpenStack Magnum
    * Mesos DC/OS
    * Rancher
+
+
+OpenStack Magnum
+================
+
+.. container:: progressive
+
+   * OpenStack Project
+   * API services for Container orchestration engines
+
+     * Docker Swarm, Kubernetes, Apache Mesos
+   * https://wiki.openstack.org/wiki/Magnum
+
+Mesos DC/OS
+===========
+
+.. container:: progressive
+
+   * Mesos: Apache project
+
+| Apache Mesos abstracts CPU, memory, storage, and other compute
+| resources away from machines (physical or virtual), enabling
+| fault-tolerant and elastic distributed systems to easily be built
+| and run effectively.
+
+.. container:: progressive
+
+   * DC/OS: Open Source
+   * Fancy catalog
+
+| DC/OS (the datacenter operating system) is an open-source,
+| distributed operating system based on the Apache Mesos distributed
+| systems kernel.
+
+.. container:: progressive
+
+   * http://mesos.apache.org/
+     https://dcos.io/
+
+
+Rancher
+=======
+
+.. container:: progressive
+
+   * Rancher: Apache 2.0
+
+| Complete container management platform
+| Deploy and manage Kubernetes with ease
+
+.. container:: progressive
+
+   * Very easy to setup as a first step
+   * Fancy catalog
 
 Pros/Cons
 =========
