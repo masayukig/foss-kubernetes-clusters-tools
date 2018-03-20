@@ -1,7 +1,7 @@
 FOSSAsia Summit 2018
 ====================
 
-.. figlet:: Comparison of FOSS k8s management tools
+.. figlet:: FOSS Kubernetes management tools
 
 .. code:: yaml
 
