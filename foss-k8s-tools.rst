@@ -39,6 +39,29 @@ Who am I?
    * Mesos User Group Tokyo
 
 
+What is this talk about Kubernetes(k8s)?
+========================================
+
+* Famous and interesting technology
+* FOSS
+* DIY (not GKE, EKS, AKS..)
+
+
+My private cloud
+================
+
+* 3 x 1U server + 1 workstation
+
+  * Powered by LackRack_
+* OpenStack Queens on openSUSE Leap 42.3
+
+  * Network: very flat, VMs are connected to a home router
+  * `Very simple network`_
+
+.. _LackRack: https://wiki.eth0.nl/index.php/LackRack
+.. _Very simple network: https://goo.gl/P4UY71
+
+
 What is Kubernetes?
 ===================
 
@@ -54,9 +77,13 @@ Why should we use FOSS tools? (why not GKE, etc?)
 
 .. container:: progressive
 
-   * Free
+   * Free (not only money)
    * Source code
    * To know everything -> Fun :)
+
+.. If you want to just try to use k8s, using GKE is an very good
+   option :) But if you'd like to know/understand the mechanism, it's
+   good to build it by yourself.
 
 FOSS k8s tools
 ==============
@@ -66,6 +93,7 @@ FOSS k8s tools
    * OpenStack Magnum
    * Mesos DC/OS
    * Rancher
+   * minikube
 
 
 OpenStack Magnum
@@ -127,12 +155,30 @@ Pros/Cons
 .. container:: progressive
 
    * OpenStack Magnum
+
      * Building OpenStack env is not easy
    * Mesos DC/OS
+
      * Need several nodes at least
    * Rancher
+
      * Start from 1 node
      * k8s CLI (shell)
+
+
+Future work & Conclusion
+========================
+
+* Real usecase
+
+  * IoT
+  * As test environments
+* More stable infrastructure (SUSE Enterprise Linux?)
+* Make my OpenStack cloud in a private network
+* OpenStack Magnum project
+
+* We can play k8s with FOSS tools easier(?)
+* Having a private cloud(s) is very fun!
 
 
 Demo(OpenStack Magnum, Mesos DC/OS, Rancher...)
