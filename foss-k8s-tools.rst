@@ -44,8 +44,13 @@ What is Kubernetes?
 .. container:: progressive
 
    * Container Orchestration tool
+
+     * Self-healing, Automatic binpacking, Horizontal scaling,
+       autscaling, load blance, etc, etc..
    * Open Source
-   * Difficult to deploy
+
+     * Apache-2.0 License
+   * Difficult to deploy (if you want to use it in a **production** )
 
 
 Why should we use FOSS tools?
@@ -62,6 +67,7 @@ FOSS k8s tools
 
 .. container:: progressive
 
+   * minikube: https://github.com/kubernetes/minikube
    * OpenStack Magnum
    * Mesos DC/OS
    * Rancher
