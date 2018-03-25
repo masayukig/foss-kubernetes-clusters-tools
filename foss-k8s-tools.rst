@@ -5,9 +5,9 @@ FOSSAsia Summit 2018
 
 .. code:: yaml
 
-   Name     : Masayuki Igawa
+   Name     : Masayuki Igawa (Twitter/GitHub/freenode: masayukig)
    Slide URL: https://github.com/masayukig/foss-kubernetes-clusters-tools
-   Date     : Sunday, March 25 2018
+   Date     : 14:10-14:30, Sunday, March 25 2018
 
 .. Kubernetes(k8s) is the most popular and famous container orchestration
    software these days. And we can use it through Kubernetes as a
@@ -34,16 +34,17 @@ Who am I?
 
    * OpenStack Up/Down stream Programmer
      * Quarity Assurance (Tempest, stestr..)
-   * SUSE
-   * Linux User
+   * Working at SUSE
    * Mesos User Group Tokyo
 
 
-What is this talk about Kubernetes(k8s)?
-========================================
+What is this talking about Kubernetes(k8s)?
+===========================================
 
-* Famous and interesting technology
+* Famous and interesting technology :)
 * FOSS
+
+  * As an entry point
 * DIY (not GKE, EKS, AKS..)
 
 
@@ -52,13 +53,13 @@ My private cloud
 
 * 3 x 1U server + 1 workstation
 
-  * Powered by LackRack_
+  * Powered by LackRack: https://wiki.eth0.nl/index.php/LackRack
+  * https://github.com/mtreinish/dirty-clouds-done-dirt-cheap/tree/fossasia-2018
 * OpenStack Queens on openSUSE Leap 42.3
 
   * Network: very flat, VMs are connected to a home router
-  * `Very simple network`_
+  * `Very simple network`_ (see 'MyPrivateOpenStackCloud.png')
 
-.. _LackRack: https://wiki.eth0.nl/index.php/LackRack
 .. _Very simple network: https://goo.gl/P4UY71
 
 
@@ -86,9 +87,12 @@ Why should we use FOSS tools? (why not GKE, etc?)
    * Source code
    * To know everything -> Fun :)
 
-.. If you want to just try to use k8s, using GKE is an very good
+.. container:: handout
+
+   If you want to just try to use k8s, using GKE is an very good
    option :) But if you'd like to know/understand the mechanism, it's
    good to build it by yourself.
+
 
 FOSS k8s tools
 ==============
@@ -96,10 +100,11 @@ FOSS k8s tools
 .. container:: progressive
 
    * minikube: https://github.com/kubernetes/minikube
-   * OpenStack Magnum
-   * Mesos DC/OS
-   * Rancher
-   * minikube
+   * OpenStack Magnum: https://docs.openstack.org/magnum/
+   * Mesos DC/OS: http://mesos.apache.org/  https://dcos.io/
+   * Rancher: https://rancher.com/
+   * minikube: https://kubernetes.io/docs/getting-started-guides/minikube
+   * etc..
 
 
 OpenStack Magnum
@@ -107,11 +112,11 @@ OpenStack Magnum
 
 .. container:: progressive
 
-   * OpenStack Project
+   * OpenStack Project: https://wiki.openstack.org/wiki/Magnum
    * API services for Container orchestration engines
 
-     * Docker Swarm, Kubernetes, Apache Mesos
-   * https://wiki.openstack.org/wiki/Magnum
+     * Supported: Docker Swarm, Kubernetes, Apache Mesos
+
 
 Mesos DC/OS
 ===========
@@ -127,7 +132,7 @@ Mesos DC/OS
 
 .. container:: progressive
 
-   * DC/OS: Open Source
+   * DC/OS: Apache 2.0
    * Fancy catalog
 
 | DC/OS (the datacenter operating system) is an open-source,
@@ -145,7 +150,7 @@ Rancher
 
 .. container:: progressive
 
-   * Rancher: Apache 2.0
+   * License: Apache 2.0
 
 | Complete container management platform
 | Deploy and manage Kubernetes with ease
@@ -155,6 +160,7 @@ Rancher
    * Very easy to setup as a first step
    * Fancy catalog
 
+
 Pros/Cons
 =========
 
@@ -163,6 +169,7 @@ Pros/Cons
    * OpenStack Magnum
 
      * Building OpenStack env is not easy
+     * https://docs.openstack.org/magnum/
    * Mesos DC/OS
 
      * Need several nodes at least
@@ -181,7 +188,7 @@ Future work & Conclusion
   * As test environments
 * More stable infrastructure (SUSE Enterprise Linux?)
 * Make my OpenStack cloud in a private network
-* OpenStack Magnum project
+* Use OpenStack Magnum project
 
 * We can play k8s with FOSS tools easier(?)
 * Having a private cloud(s) is very fun!
