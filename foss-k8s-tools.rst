@@ -24,7 +24,7 @@ FOSSAsia Summit 2018
 DISCLAIMER
 ==========
 
-| These slide are my own opinion.
+.. cowsay:: These slide are my own opinion.
 
 
 Who am I?
@@ -33,6 +33,7 @@ Who am I?
 .. container:: progressive
 
    * OpenStack Up/Down stream Programmer
+
      * Quarity Assurance (Tempest, stestr..)
    * Working at SUSE
    * Mesos User Group Tokyo
@@ -51,10 +52,10 @@ What is this talking about Kubernetes(k8s)?
 My private cloud
 ================
 
-* 3 x 1U server + 1 workstation
+* 3 x 1U servers + 1 workstation
 
   * Powered by LackRack: https://wiki.eth0.nl/index.php/LackRack
-  * https://github.com/mtreinish/dirty-clouds-done-dirt-cheap/tree/fossasia-2018
+  * https://github.com/mtreinish/dirty-clouds-done-dirt-cheap/
 * OpenStack Queens on openSUSE Leap 42.3
 
   * Network: very flat, VMs are connected to a home router
@@ -86,6 +87,7 @@ Why should we use FOSS tools? (why not GKE, etc?)
    * Free (not only money)
    * Source code
    * To know everything -> Fun :)
+   * (I have the resource!)
 
 .. container:: handout
 
@@ -99,11 +101,10 @@ FOSS k8s tools
 
 .. container:: progressive
 
-   * minikube: https://github.com/kubernetes/minikube
+   * minikube: https://kubernetes.io/docs/getting-started-guides/minikube
    * OpenStack Magnum: https://docs.openstack.org/magnum/
    * Mesos DC/OS: http://mesos.apache.org/  https://dcos.io/
    * Rancher: https://rancher.com/
-   * minikube: https://kubernetes.io/docs/getting-started-guides/minikube
    * etc..
 
 
@@ -133,7 +134,6 @@ Mesos DC/OS
 .. container:: progressive
 
    * DC/OS: Apache 2.0
-   * Fancy catalog
 
 | DC/OS (the datacenter operating system) is an open-source,
 | distributed operating system based on the Apache Mesos distributed
@@ -141,6 +141,7 @@ Mesos DC/OS
 
 .. container:: progressive
 
+   * Fancy catalog
    * http://mesos.apache.org/
      https://dcos.io/
 
@@ -168,27 +169,34 @@ Pros/Cons
 
    * OpenStack Magnum
 
-     * Building OpenStack env is not easy
+     * :( Building OpenStack env is not easy
+     * :) It should be used with standard APIs if you already use OpenStack
      * https://docs.openstack.org/magnum/
    * Mesos DC/OS
 
-     * Need several nodes at least
+     * :( Need several nodes at least
+     * :) Need several nodes at least
    * Rancher
 
-     * Start from 1 node
-     * k8s CLI (shell)
+     * :) Start from 1 node
+     * :) k8s CLI (shell)
+     * :(/:) CLI is poor(?) There are APIs.
 
 
-Future work & Conclusion
-========================
+Future work
+===========
 
 * Real usecase
 
   * IoT
   * As test environments
 * More stable infrastructure (SUSE Enterprise Linux?)
-* Make my OpenStack cloud in a private network
+* Introduce network isolation for my OpenStack cloud
 * Use OpenStack Magnum project
+
+
+Conclusion
+==========
 
 * We can play k8s with FOSS tools easier(?)
 * Having a private cloud(s) is very fun!
